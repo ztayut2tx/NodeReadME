@@ -43,5 +43,23 @@ const questions = [
         type: 'input',
         name: 'Email',
         message: 'Your Email address?.',
-    }
+    },
 ];
+
+
+
+    function writeToFile (fileName, data) {
+        return fs.writeFileSync(fileName, data)
+    };
+
+    console.log("ReadME has been generated");
+
+    function init () {
+        inquirer.prompt(questions).then((response) => {
+            console.log(generateMD(response));
+        
+            writeToFile("ReadME.md", generateMD(response));
+    });
+}
+
+init();
