@@ -1,0 +1,23 @@
+{
+  "name": "nodereadme",
+  "version": "1.0.0",
+  "description": "##Table of Contents     1. [Description](Use nodejs to quickly and efficiently create a readme document on the backend server.)     2. [Installation](Inquirer in package.json)     3. [Usage](Use the command line in nodejs)     4. [License's](Apache License 2.0)     5. [Contributers](no)     6. [Github Handle](ztayut2tx)     7. [Email](ztayut2tx@gmail.com)",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ztayut2tx/NodeReadME.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ztayut2tx/NodeReadME/issues"
+  },
+  "homepage": "https://github.com/ztayut2tx/NodeReadME#readme"
+}

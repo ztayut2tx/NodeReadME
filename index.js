@@ -1,7 +1,8 @@
+//required packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMD = require ('./utils/generateMD');
-
+//questions to generate answers to specific template
 const questions = [
     {
         type: 'input',
@@ -47,7 +48,7 @@ const questions = [
 ];
 
 
-
+//function to write the inputed responses to the template
     function writeToFile (fileName, data) {
         return fs.writeFileSync(fileName, data)
     };
@@ -61,5 +62,5 @@ const questions = [
             writeToFile("ReadME.md", generateMD(response));
     });
 }
-
+//function to initialize
 init();
